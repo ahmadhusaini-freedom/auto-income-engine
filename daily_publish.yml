@@ -1,0 +1,59 @@
+name: AI Content Engine — Daily Auto-Publish
+
+on:
+  schedule:
+    # Setiap hari jam 01:00 UTC = 08:00 WIB
+    - cron: '0 1 * * *'
+  workflow_dispatch:  # bisa juga dijalankan manual dari GitHub
+
+jobs:
+  generate-and-publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate artikel dengan Gemini AI
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python scripts/generate_article.py
+
+      - name: Publish ke Medium
+        env:
+          MEDIUM_TOKEN: ${{ secrets.MEDIUM_TOKEN }}
+        run: python scripts/publish_medium.py
+
+      - name: Publish ke Dev.to
+        env:
+          DEVTO_API_KEY: ${{ secrets.DEVTO_API_KEY }}
+        run: python scripts/publish_devto.py
+
+      - name: Publish ke Hashnode
+        env:
+          HASHNODE_TOKEN: ${{ secrets.HASHNODE_TOKEN }}
+          HASHNODE_PUBLICATION_ID: ${{ secrets.HASHNODE_PUBLICATION_ID }}
+        run: python scripts/publish_hashnode.py
+
+      - name: Log ke Google Sheets
+        env:
+          GOOGLE_SHEETS_CREDENTIALS: ${{ secrets.GOOGLE_SHEETS_CREDENTIALS }}
+          SPREADSHEET_ID: ${{ secrets.SPREADSHEET_ID }}
+        run: python scripts/log_to_sheets.py
+
+      - name: Commit hasil hari ini
+        run: |
+          git config user.name "AI Content Bot"
+          git config user.email "bot@auto-income.ai"
+          git add logs/
+          git diff --staged --quiet || git commit -m "Auto: published $(date '+%Y-%m-%d')"
+          git push
