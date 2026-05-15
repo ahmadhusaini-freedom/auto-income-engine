@@ -1,0 +1,122 @@
+{
+  "topics": [
+    {
+      "title": "10 Ways AI Is Changing Small Business Operations in 2025",
+      "keywords": ["AI for business", "small business automation", "AI tools 2025"],
+      "niche": "AI & Business",
+      "target_audience": "small business owners",
+      "tone": "practical, data-driven"
+    },
+    {
+      "title": "The $0 Tech Stack: Free AI Tools That Replace $500/Month Subscriptions",
+      "keywords": ["free AI tools", "AI alternatives", "save money with AI"],
+      "niche": "Technology",
+      "target_audience": "entrepreneurs, freelancers",
+      "tone": "helpful, specific"
+    },
+    {
+      "title": "I Automated My Entire Content Strategy — Here's What Happened After 30 Days",
+      "keywords": ["content automation", "AI content creation", "automated blogging"],
+      "niche": "Content Marketing",
+      "target_audience": "content creators, marketers",
+      "tone": "personal, story-driven"
+    },
+    {
+      "title": "Why Your ChatGPT Prompts Are Getting Mediocre Results (And How to Fix It)",
+      "keywords": ["ChatGPT prompts", "prompt engineering", "better AI results"],
+      "niche": "AI & Productivity",
+      "target_audience": "ChatGPT users",
+      "tone": "educational, direct"
+    },
+    {
+      "title": "The Freelancer's Guide to Charging 3x More Using AI Tools",
+      "keywords": ["freelancing with AI", "increase freelance rates", "AI for freelancers"],
+      "niche": "Freelancing",
+      "target_audience": "freelancers",
+      "tone": "actionable, motivating"
+    },
+    {
+      "title": "Python Automation Scripts That Save 10 Hours Per Week",
+      "keywords": ["Python automation", "save time with code", "automation scripts"],
+      "niche": "Programming",
+      "target_audience": "developers, tech workers",
+      "tone": "technical, tutorial-style"
+    },
+    {
+      "title": "How to Build a Passive Income Stream With Zero Investment in 2025",
+      "keywords": ["passive income", "zero investment business", "make money online 2025"],
+      "niche": "Personal Finance",
+      "target_audience": "side hustlers",
+      "tone": "realistic, step-by-step"
+    },
+    {
+      "title": "The Hidden Power of Google's Free AI Tools Most People Ignore",
+      "keywords": ["Google AI tools", "Gemini AI", "free Google tools"],
+      "niche": "Technology",
+      "target_audience": "general tech audience",
+      "tone": "revealing, practical"
+    },
+    {
+      "title": "5 Notion Templates That Transformed My Productivity (Free Download)",
+      "keywords": ["Notion templates", "productivity system", "Notion for beginners"],
+      "niche": "Productivity",
+      "target_audience": "knowledge workers",
+      "tone": "helpful, specific"
+    },
+    {
+      "title": "What 6 Months of Daily AI Writing Taught Me About the Future of Content",
+      "keywords": ["AI writing", "content creation future", "AI journalism"],
+      "niche": "AI & Writing",
+      "target_audience": "writers, bloggers",
+      "tone": "reflective, insightful"
+    },
+    {
+      "title": "The No-Code Tools That Let Me Build a SaaS Product in a Weekend",
+      "keywords": ["no-code tools", "build SaaS without coding", "no-code 2025"],
+      "niche": "Entrepreneurship",
+      "target_audience": "aspiring founders",
+      "tone": "inspirational, how-to"
+    },
+    {
+      "title": "API Integration Guide: Connect Any Two Apps in Under 30 Minutes",
+      "keywords": ["API integration", "connect apps", "automation guide"],
+      "niche": "Programming / No-Code",
+      "target_audience": "developers and non-developers",
+      "tone": "tutorial, step-by-step"
+    },
+    {
+      "title": "Digital Products That Sell Themselves: A Complete Creator Playbook",
+      "keywords": ["digital products", "sell digital goods", "passive income creator"],
+      "niche": "Creator Economy",
+      "target_audience": "content creators",
+      "tone": "strategic, actionable"
+    },
+    {
+      "title": "The Honest Truth About Making Money With AI in 2025",
+      "keywords": ["make money with AI", "AI income 2025", "AI side hustle truth"],
+      "niche": "AI & Finance",
+      "target_audience": "skeptics and beginners",
+      "tone": "honest, balanced"
+    },
+    {
+      "title": "How I Use Claude AI to Run My Entire Business — Real Workflow Inside",
+      "keywords": ["Claude AI workflow", "AI business automation", "Claude for business"],
+      "niche": "AI Tools",
+      "target_audience": "business owners, freelancers",
+      "tone": "personal, detailed"
+    }
+  ],
+  "publishing_schedule": {
+    "articles_per_day": 1,
+    "preferred_publish_time": "08:00 WIB",
+    "topic_rotation": "sequential"
+  },
+  "article_settings": {
+    "min_words": 1200,
+    "max_words": 1800,
+    "include_tldr": true,
+    "include_subheadings": true,
+    "include_bullet_points": true,
+    "call_to_action": "comment engagement"
+  }
+}
