@@ -22,7 +22,7 @@ def add_gumroad_cta(body_markdown: str, title: str) -> str:
 
 If you found this article helpful, I've put together a complete **200 AI Prompts Pack** that covers marketing, content creation, business automation, and more — available on Gumroad.
 
-👉 **[Get the 200 AI Prompts Pack ($7)](https://gumroad.com/l/YOUR-PRODUCT-SLUG)**
+👉 **[Get the 200 AI Prompts Pack ($7)](https://gumroad.com/l/ai-prompts-indonesia)**
 
 *Over 200 ready-to-use prompts for ChatGPT and Claude — organized by use case so you can start using them immediately.*
 
